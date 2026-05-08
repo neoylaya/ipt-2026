@@ -32,10 +32,10 @@ paths:
               properties:
                 email:
                   type: string
-                  example: Engel@example.com
+                  example: Neo@example.com
                 password:
                   type: string
-                  example: gel123
+                  example: neo123
       responses:
         "200":
           description: OK
@@ -79,22 +79,22 @@ paths:
               properties:
                 title:
                   type: string
-                  example: Ms
+                  example: Mr
                 firstName:
                   type: string
-                  example: Engel
+                  example:  Neo
                 lastName:
                   type: string
-                  example: Bellita
+                  example: Ylaya
                 email:
                   type: string
-                  example: Engel@example.com
+                  example: Neo@example.com
                 password:
                   type: string
-                  example: gel123
+                  example: neo123
                 confirmPassword:
                   type: string
-                  example: gel123
+                  example: neo123
                 acceptTerms:
                   type: boolean
                   example: true
@@ -132,7 +132,7 @@ paths:
               properties:
                 email:
                   type: string
-                  example: Engel@example.com
+                  example: Neo@example.com
       responses:
         "200":
           description: OK
@@ -200,7 +200,7 @@ paths:
               properties:
                 title:
                   type: string
-                  example: Ms
+                  example: Mr
                 firstName:
                   type: string
                   example: Jenny
