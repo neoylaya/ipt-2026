@@ -167,7 +167,7 @@ function verifyEmail(req: any, res: any, next: any) {
 }
 
 function forgotPassword(req: any, res: any, next: any) {
-    accountService.forgotPassword(req.body, req.get('origin'))
+    accountService.forgotPassword(req.body, 'https://frontend-6hp7.onrender.com')
         .then(() => res.json({ message: 'Please check your email for password reset instructions' }))
         .catch(next);
 }
