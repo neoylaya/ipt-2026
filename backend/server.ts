@@ -7,7 +7,7 @@ import accountsController from './accounts/accounts.controller';
 import swaggerDocs from './_helpers/swagger';
 
 const app = express();
-
+app.set('trust proxy', true);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
@@ -23,7 +23,9 @@ app.use('/accounts', accountsController);
 
 // swagger docs route
 app.use('/api-docs', swaggerDocs);
-
+app.get('/', (req: Request, res: Response) => {
+    res.redirect('/api-docs');
+});
 // global error handler — must have 4 params for Express to recognize it
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
     errorHandler(err, req, res, next);
